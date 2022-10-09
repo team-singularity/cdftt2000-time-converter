@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Epoch Time Converter",
+  "name": "Epoch Time Converter",
   "icons": [
     {
       "src": "favicon.ico",
