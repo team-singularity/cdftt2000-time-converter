@@ -2,7 +2,7 @@
   "name": "epoch-time-converter",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/team-singularity/epoch-time-converter",
+  "homepage": "https://team-singularity.github.io/epoch-time-converter",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
