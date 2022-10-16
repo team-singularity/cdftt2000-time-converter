@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
+import {CdfUtils} from "./cdf.utils";
 
 function App() {
     const [date, setDate] = useState("");
@@ -7,12 +8,11 @@ function App() {
     const onTextInput = (event: any) => {
         console.log(event.target.value);
         // calculate date from nanoseconds from initial date
-        const date = new Date(0);
-        // 946681200 J12000
-        date.setUTCSeconds((event.target.value / 1000000000) + 946681200);
+
+        const timestamp = CdfUtils.toTimestamp(event.target.value);
 
         // set date to locale date + local time
-        setDate(date.toLocaleDateString() + " " + date.toLocaleTimeString());
+        setDate(timestamp.toString());
     }
 
     return (
@@ -26,7 +26,7 @@ function App() {
                 </div>
             </div>
             <div className="flex justify-center md:flex-row flex-col">
-                <div className="w-full md:max-w-md my-6">
+                <div className="w-full md:max-w-lg my-6">
                     <form>
                         <label htmlFor="default-search"
                                className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
