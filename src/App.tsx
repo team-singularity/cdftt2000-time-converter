@@ -19,7 +19,7 @@ function App() {
         <div>
             <div className="flex justify-center">
                 <div className="text-center max-w-lg my-6">
-                    <h1 className="text-4xl text-gray-500 dark:text-gray-400">Epoch Time Converter</h1>
+                    <h1 className="text-4xl text-gray-500 dark:text-gray-400">CDFTT2000 Time Converter</h1>
                     <p className="font-light text-gray-500 dark:text-gray-400 my-2">Convert time from CDF_TT2000 epoch timing standard (long64
                         integer number of nanoseconds since J2000, with leap seconds included).</p>
 
